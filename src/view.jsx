@@ -66,7 +66,7 @@ export const TodoItem = ({ addAction, todo }: TodoProps): React.Element<*> =>
       <label>{todo.description}</label>
       <button className='destroy' onClick={compose(addAction, handleRemove(todo))} />
     </div>
-    <input className='edit' value={todo.description} />
+    <input className='edit' defaultValue={todo.description} />
   </li>
 
 type FooterProps = {
